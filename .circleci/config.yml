@@ -36,4 +36,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - my-first-job
+      - my-first-job:
+          requires:
+            - say-hello
